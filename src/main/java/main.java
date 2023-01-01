@@ -4,15 +4,15 @@ import java.io.InputStreamReader;
 
 public class main {
     public static void main(String[] args) throws IOException {
-        System.out.print("Enetr the score = ");
+        System.out.print("Enter the score = ");
         try {
             InputStreamReader isr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(isr);
             int score = Integer.parseInt(br.readLine());
             char grade = letterGrage.letterGrade(score);
-            System.out.println("The grade of " + score + " is " + grade);
+            System.out.print("The grade of " + score + " is " + grade);
         } catch (NumberFormatException ex) {
-            System.out.println("Not an integer!");
+            System.out.print("Not an integer!");
         } catch (IOException e) {
             e.printStackTrace();
         }
